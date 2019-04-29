@@ -1,0 +1,11 @@
+{
+  "name": "pomotube-web",
+  "version": "1.0.0",
+  "description": "Make YouTube productive again",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inkblotty <fosterkatiea@gmail.com> (inkblotty.github.io)",
+  "license": "ISC"
+}
