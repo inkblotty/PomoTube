@@ -1,25 +1,45 @@
 {
-  "name": "pomotube-web",
-  "version": "1.0.0",
-  "description": "Make YouTube productive again",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest --watchAll"
   },
-  "author": "inkblotty <fosterkatiea@gmail.com> (inkblotty.github.io)",
-  "license": "ISC",
+  "jest": {
+    "preset": "jest-expo"
+  },
   "dependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.4.4",
-    "axios": "^0.18.0",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1"
+    "@expo/samples": "~36.0.0",
+    "@expo/vector-icons": "~10.0.0",
+    "@react-navigation/web": "~1.0.0-alpha.9",
+    "@types/react": "^16.9.17",
+    "@types/react-native": "^0.60.27",
+    "@types/react-navigation": "^3.4.0",
+    "expo": "~36.0.0",
+    "expo-asset": "~8.0.0",
+    "expo-constants": "~8.0.0",
+    "expo-font": "~8.0.0",
+    "expo-web-browser": "~8.0.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-gesture-handler": "~1.5.0",
+    "react-native-reanimated": "~1.4.0",
+    "react-native-screens": "2.0.0-alpha.12",
+    "react-native-web": "~0.11.7",
+    "react-navigation": "~4.0.10",
+    "react-navigation-stack": "~1.10.3",
+    "react-navigation-tabs": "~2.6.2",
+    "typescript": "^3.7.4"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.3.3",
-    "ts-loader": "^5.4.4",
-    "typescript": "^3.4.5"
-  }
+    "@babel/core": "^7.0.0",
+    "@babel/preset-typescript": "^7.7.7",
+    "babel-preset-expo": "~8.0.0",
+    "jest-expo": "~36.0.1"
+  },
+  "private": true
 }
